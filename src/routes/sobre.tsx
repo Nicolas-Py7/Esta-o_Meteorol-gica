@@ -21,7 +21,7 @@ const tech = [
 
 const team = [
   { name: "Nicolas Gomes Pinheiro Cavalcante", role: "Hardware / sensores / Frontend / Banco de dados" },
-  { name: "Joaquim Luiz", role: "Backend / Frontend / Hardware" },
+  { name: "Joaquim Luiz Queiroz do Rêgo", role: "Backend / Frontend / Hardware" },
   { name: "Cauã Laurentino Gomes", role: "Backend / Frontend / Hardware" }
 ];
 

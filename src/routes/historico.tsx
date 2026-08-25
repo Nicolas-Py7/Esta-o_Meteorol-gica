@@ -81,7 +81,7 @@ function History() {
       </div>
 
       <div className="glass overflow-hidden rounded-2xl">
-        <div className="max-h-[520px] overflow-auto">
+        <div className="`max-h-[520px]` overflow-auto">
           <Table>
             <TableHeader className="sticky top-0 bg-card/80 backdrop-blur">
               <TableRow>

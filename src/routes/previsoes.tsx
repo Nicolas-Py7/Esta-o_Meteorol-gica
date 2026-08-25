@@ -34,7 +34,7 @@ function Forecast() {
     <Layout title="Previsões inteligentes" subtitle="Análise preditiva baseada nos dados coletados">
       <div className="glass mb-6 flex flex-wrap items-center justify-between gap-4 rounded-2xl p-5">
         <div className="flex items-center gap-3">
-          <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-accent glow">
+          <div className="flex h-12 w-12 items-center justify-center rounded-xl `bg-gradient-to-br` from-primary to-accent glow">
             <Sparkles className="h-6 w-6 text-primary-foreground" />
           </div>
           <div>
