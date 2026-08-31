@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "author": "Nícolas Gomes Pinheiro Cavalcante",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": 179.4, "left": 118, "attrs": {} },
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": -4.76, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht1", "top": 230.7, "left": 23.4, "attrs": {} },
+    { "type": "board-bmp180", "id": "bmp1", "top": 91.84, "left": 173.06, "attrs": {} },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr1",
+      "top": 377.6,
+      "left": -66.4,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "esp:GND.2", "bb1:tn.1", "black", [ "v0", "h38.4", "v182.4" ] ],
+    [ "esp:3V3", "bb1:tp.1", "red", [ "h-19.05", "v-28.8", "h172.8" ] ],
+    [ "dht1:GND", "bb1:tn.2", "black", [ "v0", "h48", "v-134.4", "h48" ] ],
+    [ "dht1:VCC", "bb1:tp.2", "red", [ "v9.6", "h67.2", "v-192", "h57.6" ] ],
+    [ "dht1:SDA", "esp:4", "green", [ "v19.2", "h48.1", "v-153.6", "h19.2", "v-67.2" ] ],
+    [ "bmp1:VCC", "bb1:tp.3", "red", [ "h19.2", "v-9.6", "h-96", "v67.2", "h9.6" ] ],
+    [ "bmp1:GND", "bb1:tn.5", "black", [ "h9.6", "v57.79", "h-48", "v38.4" ] ],
+    [ "esp:22", "bmp1:SCL", "orange", [ "h172.8", "v67.2" ] ],
+    [ "esp:21", "bmp1:SDA", "gold", [ "h182.4", "v48" ] ],
+    [ "ldr1:VCC", "bb1:tp.4", "red", [ "h0" ] ],
+    [ "ldr1:GND", "bb1:tn.3", "black", [ "h0" ] ],
+    [ "esp:35", "ldr1:AO", "blue", [ "h-86.25", "v374.4", "h201.6", "v-28.8" ] ]
+  ],
+  "dependencies": {}
+}
